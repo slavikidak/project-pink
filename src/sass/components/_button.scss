@@ -1,0 +1,61 @@
+.button {
+  display: inline-block;
+
+  min-width: 73px;
+
+  font-family: $font-primary;
+  font-size: $primary-font-size;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: color $transition-function, background-color $transition-function,
+    box-shadow $transition-function;
+}
+
+.button--blue {
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+
+  background-color: $brand-color;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button--grey {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: $primary-font-size;
+  line-height: 1.62;
+  letter-spacing: $main-letter-spacing;
+  color: $black-color;
+
+  background-color: $background-color-light;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+
+    background-color: $brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button--with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.button__icon--right {
+  margin-left: 10px;
+}
