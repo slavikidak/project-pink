@@ -1,0 +1,94 @@
+//   html-code example
+
+//   <a class="button button--red button--bigger" href="#"
+//         >Что-то там
+//         <svg class="button__icon" width="8" height="15">
+//           <use
+//             href="./images/icons.svg#icon-arrow-white"
+//           ></use>
+//         </svg>
+//       </a>
+//       <a class="button button--white button--bigger" href="#"
+//         >Что-то там
+//         <svg class="button__icon" width="10" height="16">
+//           <use href="./images/icons.svg#icon-arrow-red"></use>
+//         </svg>
+//       </a>
+
+//       <a class="button button--red button--smaller" href="#">Что-то там </a>
+//       <a class="button button--white button--smaller" href="#">Что-то там </a>
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: DM Sans, sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: background-color 250ms linear;
+}
+
+.button--bigger {
+  min-width: 161px;
+  min-height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  border-radius: 22px;
+}
+
+.button--smaller {
+  font-weight: 400;
+  border-radius: 20px;
+
+  @media screen and (max-width: 1199px) {
+    min-width: 61px;
+    min-height: 24px;
+    padding: 0 14px;
+
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 104px;
+    min-height: 40px;
+    padding: 0 18px;
+
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+.button--red {
+  background-color: #d41342;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.button--white {
+  background-color: #ffffff;
+  color: #d41443;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button__icon {
+  margin-left: 14px;
+  fill: #ffffff;
+}
