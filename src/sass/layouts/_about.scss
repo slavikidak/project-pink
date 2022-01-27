@@ -6,9 +6,7 @@
 
 .about__label {
   margin-bottom: 15px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $secondary-font;
   font-size: 18px;
   line-height: 1.17;
 
@@ -18,11 +16,9 @@
 
 .about__title {
   margin-bottom: 26px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: $secondary-font;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -42,11 +38,10 @@
 .about__text {
   max-width: 220px;
   margin-bottom: 46px;
-  font-family: DM Sans;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 1.62;
 
   @extend %centering;
 
@@ -56,27 +51,20 @@
 .about__text--second,
 .about__text--third {
   margin-bottom: 25px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 162%;
 
   color: $secondary-text-color;
 }
 
-.about__btn {
+.button--white {
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   display: flex;
   align-items: center;
   text-align: center;
 
-  background: $button-text;
   border-radius: 22px;
 
-  color: $accent-color;
   max-width: 176px;
   max-height: 44px;
 
@@ -86,6 +74,6 @@
 
   @extend %centering;
 }
-.about__svg {
+.about__button-icon {
   margin-left: 15px;
 }
