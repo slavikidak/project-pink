@@ -17,5 +17,9 @@
 </symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 32 32">
 <path fill="#D41443" d="m19.414 27.414 10-10a2 2 0 0 0 0-2.828l-10-10a2 2 0 1 0-2.828 2.828L23.172 14H4a2 2 0 1 0 0 4h19.172l-6.586 6.586c-.39.39-.586.902-.586 1.414s.195 1.024.586 1.414a2 2 0 0 0 2.828 0z" stroke-width="15"/></symbol>
+<symbol id="icon-menu-opener" viewBox="0 0 24 16">
+<path d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="icon-menu-close" viewBox="0 0 19 19">
+<path d="M18.667 1.88 16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453Z" stroke-linecap="round"/></symbol>
 </defs>
 </svg>
