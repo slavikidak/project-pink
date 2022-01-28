@@ -1,0 +1,88 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  &__set {
+    font-family: $font-family-heading;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-top: 127px;
+  }
+  &__title {
+    font-family: $font-family-heading;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-top: 15px;
+    margin-bottom: 49px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item:first-child {
+    background: $background-header;
+    border-radius: 24px;
+    margin-right: 30px;
+  }
+  &__item:nth-child(2n) {
+    background: $background-cafe;
+    border-radius: 24px;
+    margin-right: 30px;
+  }
+  &__item:nth-child(3n) {
+    background: $background-foodtrack;
+    border-radius: 24px;
+  }
+
+  &__product-name {
+    font-family: $font-family-heading;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $button-text;
+    margin-bottom: 32px;
+  }
+  &__more::after {
+    content: '...';
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  &__product-name::before {
+    margin-bottom: 38px;
+    position: relative;
+    // background-image: url(./src/images/products/mobile/pic1@1x.png);
+  }
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $button-text;
+    margin-bottom: 62px;
+  }
+}
