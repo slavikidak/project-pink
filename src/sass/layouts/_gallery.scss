@@ -4,6 +4,7 @@
 
 .gallery-items {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(7, 69px);
   grid-template-rows: repeat(3, 69px);
   grid-column-gap: 6px;
