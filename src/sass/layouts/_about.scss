@@ -6,30 +6,26 @@
 
 .about__label {
   margin-bottom: 15px;
-  font-family: $secondary-font;
   font-size: 18px;
   line-height: 1.17;
-
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .about__title {
   margin-bottom: 26px;
-  font-family: $secondary-font;
   font-size: 34px;
   line-height: 1.14;
-  text-align: center;
+
   letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  @extend %centering;
-
   max-width: 200px;
-
+}
+.about__title,
+.about__label {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  text-align: center;
+  @extend %centering;
   color: $accent-color;
 }
-
 .about__img {
   margin-bottom: 46px;
   @extend %centering;
