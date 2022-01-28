@@ -8,6 +8,11 @@
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.17;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .about__title {
@@ -17,6 +22,12 @@
 
   letter-spacing: 0.04em;
   max-width: 200px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+    line-height: 1.15;
+    max-width: 440px;
+  }
 }
 .about__title,
 .about__label {
@@ -26,14 +37,34 @@
   @extend %centering;
   color: $accent-color;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flexbox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .about__img {
   margin-bottom: 46px;
   @extend %centering;
-}
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+}
+.about__wrap {
+  max-width: 220px;
+  @extend %centering;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 340px;
+    margin-top: 100px;
+  }
+}
 .about__text {
   font-family: $main-font;
-  max-width: 220px;
+  // max-width: 220px;
   margin-bottom: 46px;
 
   font-weight: 500;
@@ -43,6 +74,11 @@
   @extend %centering;
 
   color: $main-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
 }
 
 .about__text--second,
@@ -52,7 +88,11 @@
 
   color: $secondary-text-color;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__text--third {
+    margin-bottom: 62px;
+  }
+}
 .about .button--white {
   font-weight: bold;
   font-size: 14px;
@@ -61,7 +101,6 @@
   align-items: center;
 
   border-radius: 22px;
-
   max-width: 176px;
   max-height: 44px;
 
@@ -69,7 +108,10 @@
 
   border: none;
 
-  @extend %centering;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 
   // add hoveer
 
@@ -77,6 +119,7 @@
     background-color: #fff;
   }
 }
+
 .button__icon {
   margin-left: 15px;
 }
@@ -109,6 +152,7 @@
 }
 
 #read-more:checked ~ .extra-text {
+  margin-top: -20px;
   display: block;
 }
 
