@@ -20,6 +20,7 @@
 }
 .about__title,
 .about__label {
+  font-family: $font-family-heading;
   text-transform: uppercase;
   text-align: center;
   @extend %centering;
@@ -31,6 +32,7 @@
 }
 
 .about__text {
+  font-family: $main-font;
   max-width: 220px;
   margin-bottom: 46px;
 
@@ -44,19 +46,19 @@
 }
 
 .about__text--second,
-.about__text--third {
+.about__text--third,
+.extra-text {
   margin-bottom: 25px;
 
   color: $secondary-text-color;
 }
 
-.button--white {
+.about .button--white {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.29;
   display: flex;
   align-items: center;
-  text-align: center;
 
   border-radius: 22px;
 
@@ -68,7 +70,52 @@
   border: none;
 
   @extend %centering;
+
+  // add hoveer
+
+  &:hover {
+    background-color: #fff;
+  }
 }
 .button__icon {
   margin-left: 15px;
+}
+// bg img
+
+.bg-img {
+  background-size: 50px 130px, 75px 130px;
+  background-repeat: no-repeat;
+  background-position: top 520px left 0, top 520px right 0;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/mobile/milk-spray-mobile-left.png),
+      url(../images/about/mobile/milk-spray-mobile-right.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/mobile/milk-spray-mobile-left@2x.png),
+        url(../images/about/mobile/milk-spray-mobile-right@2x.png);
+    }
+  }
+}
+
+.extra-text {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
 }
