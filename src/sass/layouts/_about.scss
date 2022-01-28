@@ -1,0 +1,74 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 40px;
+  background-color: $main-background-color;
+}
+
+.about__label {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  font-size: 34px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+  max-width: 200px;
+}
+.about__title,
+.about__label {
+  text-transform: uppercase;
+  text-align: center;
+  @extend %centering;
+  color: $accent-color;
+}
+.about__img {
+  margin-bottom: 46px;
+  @extend %centering;
+}
+
+.about__text {
+  max-width: 220px;
+  margin-bottom: 46px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  @extend %centering;
+
+  color: $main-text-color;
+}
+
+.about__text--second,
+.about__text--third {
+  margin-bottom: 25px;
+
+  color: $secondary-text-color;
+}
+
+.button--white {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 22px;
+
+  max-width: 176px;
+  max-height: 44px;
+
+  padding: 12px 30px 12px 30px;
+
+  border: none;
+
+  @extend %centering;
+}
+.button__icon {
+  margin-left: 15px;
+}
