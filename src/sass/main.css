@@ -219,7 +219,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .company {
+    padding: 6px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company {
+    padding: 37px 0;
+  }
 }
 
 .company__name {
@@ -465,9 +476,18 @@ img {
   margin: 0 auto;
   padding-top: 193px;
   padding-bottom: 160px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #FFB8CA;
+}
+
+.hero-section__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .contacts {
