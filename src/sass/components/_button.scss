@@ -27,6 +27,8 @@
   text-align: center;
   text-decoration: none;
 
+  border: none;
+
   cursor: pointer;
 
   transition: background-color 250ms linear;
@@ -90,5 +92,4 @@
 
 .button__icon {
   margin-left: 14px;
-  fill: #ffffff;
 }
