@@ -1,0 +1,121 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 40px;
+  background-color: $main-background-color;
+}
+
+.about__label {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  font-size: 34px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+  max-width: 200px;
+}
+.about__title,
+.about__label {
+  font-family: $font-family-heading;
+  text-transform: uppercase;
+  text-align: center;
+  @extend %centering;
+  color: $accent-color;
+}
+.about__img {
+  margin-bottom: 46px;
+  @extend %centering;
+}
+
+.about__text {
+  font-family: $main-font;
+  max-width: 220px;
+  margin-bottom: 46px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  @extend %centering;
+
+  color: $main-text-color;
+}
+
+.about__text--second,
+.about__text--third,
+.extra-text {
+  margin-bottom: 25px;
+
+  color: $secondary-text-color;
+}
+
+.about .button--white {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+
+  border-radius: 22px;
+
+  max-width: 176px;
+  max-height: 44px;
+
+  padding: 12px 30px 12px 30px;
+
+  border: none;
+
+  @extend %centering;
+
+  // add hoveer
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+.button__icon {
+  margin-left: 15px;
+}
+// bg img
+
+.bg-img {
+  background-size: 50px 130px, 75px 130px;
+  background-repeat: no-repeat;
+  background-position: top 520px left 0, top 520px right 0;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/mobile/milk-spray-mobile-left.png),
+      url(../images/about/mobile/milk-spray-mobile-right.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/mobile/milk-spray-mobile-left@2x.png),
+        url(../images/about/mobile/milk-spray-mobile-right@2x.png);
+    }
+  }
+}
+
+.extra-text {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
+}

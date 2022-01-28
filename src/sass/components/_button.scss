@@ -27,6 +27,8 @@
   text-align: center;
   text-decoration: none;
 
+  border: none;
+
   cursor: pointer;
 
   transition: background-color 250ms linear;
@@ -35,6 +37,7 @@
 .button--bigger {
   min-width: 161px;
   min-height: 44px;
+
   padding-top: 12px;
   padding-bottom: 12px;
 
@@ -90,5 +93,4 @@
 
 .button__icon {
   margin-left: 14px;
-  fill: #ffffff;
 }
