@@ -1,24 +1,86 @@
 .footer {
     background-color: #FFF5F6;
+    @media screen and (max-width: 767px) {
+        width: 320px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;   
+    }
+}
+.footer__flex-container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        margin-bottom: 91px;  
+  
 }
 .footer__title {
 font-family: $font-family-heading;
-font-size: 30px;
 letter-spacing: 1.1;
 text-transform: uppercase;
 color: $secondary-color;
+@media screen and (max-width: 767px) {
+    width: 232px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 21px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 340px; 
+    margin-bottom: 16pt;
+    font-size: 26px;
+    line-height: 30px;
+}
+@media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 15px;
+}
 }
 .footer__title--lower {
 font-family: $font-family-heading;
-font-size: 58px;
+// font-size: 58px;
 letter-spacing: 1.1;
 text-transform: uppercase;
 color: $accent-color; 
+@media screen and (max-width: 767px) {
+    width: 200px;
+    margin-bottom: 43px;
+    font-size: 34px;
+    line-height: 39px;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 340px;
+    font-size: 48px;
+    line-height: 55px;
+}
+@media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 66px;  
+}
+}
+ 
+.footer__contact {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 43px;
+    }  
+}
 .social {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 767px)  {
+        margin-left: -28px;
+    } 
+    @media screen and (max-width: 1199px) {
+        justify-content: end;
+        margin-bottom: 46px;
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: -30px;
+    
+    }
 }
 
 .social__itam {
@@ -26,6 +88,12 @@ color: $accent-color;
  height: 34px;
  background-image: radial-gradient(#FEA5BB, #FEA5BB);
  border-radius: 360px;
+ @media screen and (max-width: 767px) {
+     margin-left: 28px;
+ }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+     margin-left: 30px;
+ }
 }
 
 .social__link {
@@ -52,19 +120,32 @@ color: $accent-color;
     font-family: $main-font;
     font-size: 16px;
     font-weight: 500;
-letter-spacing: 1.1;
-    color: $main-text-color;  
+    letter-spacing: 1.1;
+    color: $main-text-color; 
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+       margin-left: 45px;
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 14px;   
+    }
 }
 .footer__ddress--phone {
     font-family: $main-font;
-    font-size: 16px;
+    // font-size: 16px;
     font-weight: 500;
 letter-spacing: 1.1;
 color: $accent-color;
+@media screen and (max-width: 767px) {
+    font-size: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;   
+}
 }
 
 .footer__rights {
-    padding-top: 9px;
+    // padding-top: 9px;
     font-family: $main-font;
     font-size: 14px;
     font-weight: 700;
@@ -72,5 +153,35 @@ letter-spacing: 1.8;
 line-height: 186%;
 text-align: center; 
     color: $secondary-text-color;  
-    border-top: 1px solid $background-slider ; 
-}
+    @media screen and (max-width: 767px) {
+        width: 150px;
+        font-size: 14px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin-left: 79px;
+        &::before {
+            position: absolute;
+            left: 0;
+            margin-top: -22px;
+            content: '';
+            display: block;
+            width: 320px;
+            border: 1px solid $background-slider;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 276px;
+            font-size: 14px;
+            padding-top: 29px;
+            padding-bottom: 18px;
+            margin-left: 248px; 
+            &::before {
+                position: absolute;
+                left: 0;
+                margin-top: -29px;
+                content: '';
+                display: block;
+                width: 768px;
+                border: 1px solid $background-slider;}
+            }
+        }
