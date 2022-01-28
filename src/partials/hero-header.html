@@ -1,40 +1,65 @@
 <header class="header-styles">
-  <div class="container">
-    <a class="company" href="#">
-      <img class="company__logo" src="" alt="" />
-      <span class="company__name">icecream</span>
-    </a>
-    <button
-      class="menu-toggle js-open-menu"
-      type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="menu-button__icon--open" width="20" height="12">
-        <use href=""></use>
-      </svg>
-    </button>
-    <div class="menu-wrapper js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu" type="button">
-        <svg class="menu-button__icon--close" width="14" height="14">
-          <use href=""></use>
+  <div class="container container__flex header-container">
+      <a class="company" href="#">
+        <img
+          class="company__logo"
+          srcset="./images/logo/logo@1x.png 1x, ./images/logo/logo@2x.png 2x"
+          src="./images/logo/logo@2x.png"
+          alt="icecream company logo"
+        />
+        <span class="company__name">icecream</span>
+      </a>
+      <button
+        class="menu-button menu-button--opener menu-toggle js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-button__icon--open" width="20" height="12">
+          <use href="./images/sprite.svg#icon-menu-opener"></use>
         </svg>
       </button>
-      <button class="button button--bigger button--white" type="button">
+
+      <div class="menu-wrapper js-menu-container" id="mobile-menu">
+        <button class="menu-button menu-button--close menu-toggle js-close-menu" type="button">
+          <svg class="menu-button__icon--close" width="14" height="14">
+            <use href="./images/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <button class="button button--bigger button--white buy-button" type="button">
+          Buy now
+          <svg class="buy-button__icon" width="8" height="13">
+            <use href="./images/sprite.svg#icon-arrow-red"></use>
+          </svg>
+        </button>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">How it’s made?</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Our products</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="button button--bigger button--white buy-button--for-header" type="button">
         Buy now
-        <svg class="button__icon">
+        <svg class="buy-button__icon" width="8" height="13">
           <use href="./images/sprite.svg#icon-arrow-red"></use>
         </svg>
       </button>
-      <nav class="site-nav">
-        <ul>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">How it’s made?</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">Our products</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </div>
 </header>
+
+<section class="hero-section">
+  <!-- <h1 class="hero-section__title">
+    ice cream made with <span class="hero-section__title--red-part">passion</span>
+  </h1>
+  <ul>
+    <li><a class="button button--smaller button--red" href="#">Products</a></li>
+    <li><a class="button button--smaller button--white" href="#">How it’s made?</a></li>
+  </ul>
+  <img src="" alt="" />
+  <div></div> -->
+</section>
