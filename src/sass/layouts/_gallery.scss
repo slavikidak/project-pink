@@ -5,20 +5,34 @@
 .gallery-items {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(7, 20px);
-  grid-template-rows: repeat(9, 6.67px);
+  grid-template-columns: repeat(7, 40px);
+  grid-template-rows: repeat(9, 12px);
   gap: 2px;
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(7, 43px);
-    grid-template-rows: repeat(9, 12px);
+    grid-template-columns: repeat(7, 85px);
+    grid-template-rows: repeat(9, 25px);
+    gap: 5px;
   }
   @media screen and (min-width: 1200px) {
     gap: 6px;
 
-    grid-template-columns: repeat(7, 69px);
-    grid-template-rows: repeat(9, 19px);
+    grid-template-columns: repeat(7, 139px);
+    grid-template-rows: repeat(9, 42px);
   }
 }
+.gallery-item {
+  transform: scale(1);
+  z-index: 1;
+
+  transition: $transition transform, $transition z-index;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    z-index: 999;
+  }
+}
+
 .item-1 {
   grid-column: 1/2;
   grid-row: 4/7;
