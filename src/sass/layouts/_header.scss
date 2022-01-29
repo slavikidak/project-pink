@@ -1,6 +1,8 @@
 .header-styles {
   position: absolute;
   top: 0;
+  z-index: 999;
+
   width: 100%;
 }
 
@@ -41,6 +43,8 @@
   padding: 0;
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .menu-button__icon--open,
@@ -84,6 +88,7 @@
     position: fixed;
     top: 0;
     right: 0;
+
     width: 78vw;
     height: 100vh;
     padding: 60px 20px;
