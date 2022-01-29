@@ -1,0 +1,28 @@
+.advantages {
+  background-color: $main-background-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-list__item .advantages-list__text {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+}
+
+.advantages-list__label {
+  display: block;
+  font-family: $font-family-heading;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
