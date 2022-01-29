@@ -4,7 +4,7 @@
   margin-right: auto;
   background-image: linear-gradient($button-text 87px, $main-background-color 24px);
   @media screen and (min-width: 1200px) {
-    background-image: url(/images/contacts/desktop/bg@1x.png),
+    background-image: url(../images/contacts/desktop/bg@1x.png),
       linear-gradient($button-text 87px, $main-background-color 24px);
     background-size: 100%, 382px;
     background-size: cover;
