@@ -1,11 +1,13 @@
 .about {
   padding-top: 125px;
   padding-bottom: 40px;
+
   background-color: $main-background-color;
 }
 
 .about__label {
   margin-bottom: 15px;
+
   font-size: 18px;
   line-height: 1.17;
 
@@ -13,10 +15,15 @@
     font-size: 26px;
     line-height: 1.15;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .about__title {
   margin-bottom: 26px;
+
   font-size: 34px;
   line-height: 1.14;
 
@@ -24,9 +31,18 @@
   max-width: 200px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+
     font-size: 48px;
     line-height: 1.15;
     max-width: 440px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+
+    font-size: 58px;
+    line-height: 1.14;
+    max-width: 540px;
   }
 }
 .about__title,
@@ -50,18 +66,29 @@
   @extend %centering;
 
   @media screen and (min-width: 768px) {
-    margin-right: 20px;
     margin-top: 50px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 0;
   }
 }
 .about__wrap {
   max-width: 220px;
   @extend %centering;
+
   @media screen and (min-width: 768px) {
     max-width: 340px;
     margin-top: 100px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 440px;
+  }
 }
+
 .about__text {
   font-family: $main-font;
   margin-bottom: 46px;
@@ -78,6 +105,11 @@
     font-size: 14px;
     line-height: 1.76;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    margin-bottom: 35px;
+  }
 }
 
 .about__text--second,
@@ -86,10 +118,21 @@
   margin-bottom: 25px;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.94;
+    margin-bottom: 35px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about__text--third {
     margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text--third {
+    margin-bottom: 45px;
   }
 }
 .about .button--white {
@@ -107,19 +150,23 @@
 
   border: none;
 
+  &:hover {
+    background-color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.31;
   }
 
-  // add hoveer
-
-  &:hover {
-    background-color: #fff;
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      background-color: #ecebeb;
+    }
   }
 }
 
-.button__icon {
+.read-more__icon {
   margin-left: 15px;
 }
 // bg img
@@ -127,7 +174,8 @@
 .about__bg-img {
   background-size: 50px 130px, 75px 130px;
   background-repeat: no-repeat;
-  background-position: top 520px left 0, top 520px right 0;
+  background-position: top 780px left 0, top 780px right 0;
+
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/mobile/milk-spray-mobile-left.png),
       url(../images/about/mobile/milk-spray-mobile-right.png);
@@ -137,6 +185,21 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/about/mobile/milk-spray-mobile-left@2x.png),
         url(../images/about/mobile/milk-spray-mobile-right@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-size: 170px 450px, 250px 530px;
+    background-position: top 360px left 0, top 350px right 0;
+
+    background-image: url(../images/about/desktop/milk-spray-left.png),
+      url(../images/about/desktop/milk-spray-right.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/desktop/milk-spray-left@2x.png),
+        url(../images/about/desktop/milk-spray-right@2x.png);
     }
   }
 }
