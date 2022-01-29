@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/mobile/milk-spray-mobile-left.png":[["milk-spray-mobile-left.953f2b5a.png","FeWR"],"FeWR"],"./../images/about/mobile/milk-spray-mobile-right.png":[["milk-spray-mobile-right.1b37d86a.png","DnBf"],"DnBf"],"./../images/about/mobile/milk-spray-mobile-left@2x.png":[["milk-spray-mobile-left@2x.6d8c8550.png","hAVS"],"hAVS"],"./../images/about/mobile/milk-spray-mobile-right@2x.png":[["milk-spray-mobile-right@2x.f5be9e07.png","H0GI"],"H0GI"],"./../images/iconreview.svg":[["iconreview.d42deeb5.svg","sO0o"],"sO0o"],"./../images/home1.svg":[["home1.905b78d0.svg","Oimg"],"Oimg"],"/home/runner/work/project-pink/project-pink/src/images/contacts/desktop/bg@1x.png":[["bg@1x.c99f0828.png","xbqx"],"xbqx"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-pink/src.e36044d4.js.map
+//# sourceMappingURL=/project-pink/src.142f1878.js.map
