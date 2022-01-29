@@ -10,12 +10,6 @@
     background-size: cover;
     background-color: $main-background-color;
   }
-  // background-image: url(/images/contacts/desktop/bg@1x.png);
-  // background-position: 25% 100%;
-}
-
-.header-none {
-  display: none;
 }
 
 ul {
@@ -30,22 +24,11 @@ button {
 .contacts-grid {
   display: flex;
   flex-direction: column;
-
-  // display: grid;
-  // grid-template-columns: repeat(1, 3fr);
-  // gap: 20px;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 20px;
-  }
-  @media screen and (min-width: 1200px) {
-    // gap: 30px;
-  }
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 // не забути амперсант
 .contacts-grid__item {
