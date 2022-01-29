@@ -57,7 +57,7 @@ button {
   }
 
   // ------------------------
-  outline: 1px solid rgb(0, 17, 255);
+  // outline: 1px solid rgb(0, 17, 255);
   padding: 43px 21px 43px 20px;
   @media screen and (min-width: 776px) {
     padding: 50px 44px 50px 31px;
@@ -209,19 +209,10 @@ button {
   justify-content: center;
   margin-top: 54px;
   //   -----------------
-  outline: 1px solid red;
 }
-.btn {
-  margin-bottom: 10px;
-  @media screen and (min-width: 768px) {
-    margin-right: 15px;
-    margin-bottom: 0;
+
+.button__icon--for-contact {
+  @media screen and (max-width: 767px) {
+    margin-left: 8px;
   }
-  &:last-child {
-    margin-bottom: 0px;
-    margin-right: 0;
-  }
-}
-.button__icon {
-  margin-left: 8px;
 }
