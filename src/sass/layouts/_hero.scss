@@ -1,6 +1,377 @@
 .hero-section {
   margin: 0 auto;
-  padding-top: 193px;
-  padding-bottom: 160px;
   background-color: $background-header;
+
+  @media screen and (max-width: 479px) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    overflow: hidden;
+
+    padding-top: 193px;
+    padding-bottom: 160px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 96px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 160px;
+    padding-bottom: 45px;
+  }
+}
+
+.hero-section__container {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hero-section__container {
+  @media screen and (min-width: 480px) {
+    position: relative;
+    overflow: visible;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 30px;
+  }
+}
+
+.hero-positioning {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero-positioning--first {
+  @media screen and (max-width: 1199px) {
+    padding-top: 6px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 15px;
+  }
+}
+
+.hero-section__title {
+  position: relative;
+
+  font-family: $font-family-heading;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $button-text;
+
+  @media screen and (max-width: 767px) {
+    z-index: 100;
+    width: 218px;
+
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 277px;
+
+    font-size: 38px;
+    line-height: 1.15;
+  }
+}
+
+.hero-section__title--red-part {
+  color: $accent-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 48px;
+    line-height: 0.97;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.9;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+
+.hero-buttons {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 19px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+  }
+}
+
+.hero-buttons__item:not(:first-child) {
+  @media screen and (max-width: 1199px) {
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 15px;
+  }
+}
+
+.hero-positioning--second {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 124px);
+    align-items: flex-end;
+
+    margin-top: 19px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-grid;
+    grid-template-columns: 188px 200px;
+    align-items: flex-end;
+
+    margin-top: 56px;
+  }
+}
+
+.bio-eco-milk__milk-jar {
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-eco-milk__positioning {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 6px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 10px;
+  }
+}
+
+.bio-eco-milk_description {
+  font-family: $main-font;
+  color: $button-text;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.bio-eco-milk__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $button-text;
+  border: none;
+  border-radius: 50%;
+
+  @media screen and (max-width: 1199px) {
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
+}
+
+.establishments {
+  z-index: 100;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.establishments__item {
+  position: relative;
+}
+
+.establishments__item:not(:first-child) {
+  @media screen and (max-width: 1199px) {
+    margin-top: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+  }
+}
+
+.establishments__item::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: $button-text;
+  border-radius: 50%;
+  z-index: -1;
+
+  @media screen and (max-width: 1199px) {
+    top: -2px;
+    right: -10px;
+
+    width: 16px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -4px;
+    right: -18px;
+
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.establishments__count {
+  font-family: $font-family-heading;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+
+.establishments__name {
+  font-family: $main-font;
+  color: $button-text;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.mr-icecream {
+  position: absolute;
+  z-index: 90;
+
+  @media screen and (max-width: 479px) {
+    bottom: 0;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 480px) {
+    bottom: -162px;
+    right: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: -28px;
+    right: 247px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -45px;
+    left: 568px;
+  }
+}
+
+.pink-cirkle {
+  position: absolute;
+  z-index: 70;
+
+  width: 346px;
+  height: 346px;
+
+  border-radius: 50%;
+  background-color: $secondary-color;
+
+  @media screen and (max-width: 479px) {
+    bottom: 75px;
+    right: -62px;
+  }
+
+  @media screen and (min-width: 480px) {
+    bottom: -85px;
+    right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 18px;
+    left: 293px;
+
+    width: 337px;
+    height: 337px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 30px;
+    left: 449px;
+
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero-section__customer {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: -28px;
+    right: 35px;
+    z-index: 79;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -45px;
+    left: 852px;
+  }
 }
