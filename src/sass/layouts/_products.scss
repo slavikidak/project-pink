@@ -296,8 +296,9 @@
   }
 }
 
-.extra-text {
+.products__text-two {
   font-weight: 700;
+  display: none;
   font-size: 16px;
   line-height: 1.76;
   text-align: center;
@@ -343,6 +344,7 @@
   border: none;
   margin-left: auto;
   margin-right: auto;
+  background-color: $button-text;
   @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
@@ -363,7 +365,7 @@
   margin-left: auto;
 }
 
-#read-more:checked ~ .extra-text {
+#read-more:checked ~ .products__text-two {
   margin-top: -20px;
   display: block;
   margin: 0;
