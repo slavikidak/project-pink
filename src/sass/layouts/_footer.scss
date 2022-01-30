@@ -1,13 +1,8 @@
 .footer {
     background-color: $main-background-color;
     @media screen and (max-width: 767px) {
-    padding-top: 113px;
     max-width: 100%;
     min-width: 320px;
-    
-    }
-    @media screen and (min-width: 768px) {
-    padding-top: 165px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 100%;
@@ -74,9 +69,11 @@
             }
             .footer__title--container {
             @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-left: 20px;
             margin-right: 120px;
             }
             @media screen and (min-width: 1200px) {
+            margin-left: 60px;
             margin-right: 400px;
             }
             }
@@ -90,10 +87,10 @@
         margin-left: 110px;
         }
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 100px;
+        margin-left: 75px;
         } 
         @media screen and (min-width: 1200px) {
-        margin-left: 160px;  
+        margin-left: 50px;  
         }
     }
     .social {
@@ -112,11 +109,10 @@
     margin-bottom: 50px;
     }
     }
-    
         .social__item {
         width: 34px;
         height: 34px;
-        background-image: radial-gradient(#FEA5BB, #FEA5BB);
+        background-image: radial-gradient($icon-social-media, $icon-social-media);
         border-radius: 360px;
         @media screen and (max-width: 767px) {
         margin-left: 28px;
@@ -160,11 +156,11 @@
         } 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
         font-size: 14px;
-        margin-left: -8px;  
+        margin-left: -33px;  
         }
         @media screen and (min-width: 1200px) {
         font-size: 16px;
-        margin-left: 8px;  
+        margin-left: -100px;  
         }
         }
             .footer__adress--phone {
@@ -195,7 +191,7 @@
         font-size: 14px;
         padding-top: 22px;
         padding-bottom: 22px;
-        margin-left: 50px;
+        margin-left: 45px;
             &::before {
             position: absolute;
             left: 0;
