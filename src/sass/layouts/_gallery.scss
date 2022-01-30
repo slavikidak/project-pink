@@ -5,9 +5,16 @@
 .gallery-items {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(7, 40px);
-  grid-template-rows: repeat(9, 12px);
   gap: 2px;
+
+  @media screen and (max-width: 479px) {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 3.7vw);
+  }
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(7, 61px);
+    grid-template-rows: repeat(9, 19px);
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(7, 85px);
     grid-template-rows: repeat(9, 25px);
