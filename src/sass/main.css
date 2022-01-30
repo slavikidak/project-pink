@@ -986,18 +986,21 @@ body {
 @media screen and (max-width: 767px) {
   .products {
     margin-bottom: 98px;
+    margin-top: 121px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .products {
     margin-bottom: 112px;
+    margin-top: 122px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .products {
     margin-bottom: 119px;
+    margin-top: 127px;
   }
 }
 
@@ -1013,7 +1016,6 @@ body {
   .products__set {
     font-size: 18px;
     line-height: 1.17;
-    margin-top: 121px;
   }
 }
 
@@ -1021,7 +1023,6 @@ body {
   .products__set {
     font-size: 26px;
     line-height: 1.15;
-    margin-top: 122px;
   }
 }
 
@@ -1029,7 +1030,6 @@ body {
   .products__set {
     font-size: 30px;
     line-height: 1.13;
-    margin-top: 127px;
   }
 }
 
@@ -1347,6 +1347,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -1372,6 +1373,7 @@ body {
 
 .products__product-name::after {
   position: absolute;
+  z-index: -1;
   font-family: "Titan One", sans-serif;
   content: '...';
   display: block;
@@ -1435,8 +1437,9 @@ body {
   }
 }
 
-.extra-text {
+.products__text-two {
   font-weight: 700;
+  display: none;
   font-size: 16px;
   line-height: 1.76;
   text-align: center;
@@ -1446,7 +1449,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .extra-text {
+  .products__text-two {
     font-size: 14px;
     line-height: 1.52;
     padding-right: 40px;
@@ -1455,7 +1458,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .extra-text {
+  .products__text-two {
     font-size: 14px;
     line-height: 1.76;
     padding-right: 11px;
@@ -1464,7 +1467,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .extra-text {
+  .products__text-two {
     font-size: 16px;
     line-height: 1.76;
     padding-right: 44px;
@@ -1483,7 +1486,7 @@ body {
   }
 }
 
-.button--white {
+.button__circle--white {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1496,27 +1499,28 @@ body {
   border: none;
   margin-left: auto;
   margin-right: auto;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 767px) {
-  .button--white {
+  .button__circle--white {
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .button--white {
+  .button__circle--white {
     margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .button--white {
+  .button__circle--white {
     margin-top: 62px;
   }
 }
 
-.button--white:hover {
+.button__circle--white:hover {
   background-color: #ecebeb;
 }
 
@@ -1525,7 +1529,7 @@ body {
   margin-left: auto;
 }
 
-#read-more:checked ~ .extra-text {
+#read-more:checked ~ .products__text-two {
   margin-top: -20px;
   display: block;
   margin: 0;
