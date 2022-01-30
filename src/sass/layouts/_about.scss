@@ -49,6 +49,7 @@
 .about__label {
   font-family: $font-family-heading;
   text-transform: uppercase;
+  font-weight: 400;
   text-align: center;
   @extend %centering;
   color: $accent-color;
