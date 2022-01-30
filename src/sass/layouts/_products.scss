@@ -77,17 +77,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  @media screen and (max-width: 767px) {
-    width: 280px;
-    padding-top: 161px;
-  }
+  width: 280px;
+
   @media screen and (min-width: 768px) {
     width: 220px;
-    padding-top: 162px;
   }
   @media screen and (min-width: 1200px) {
     width: 329px;
-    padding-top: 163px;
   }
 }
 
@@ -111,9 +107,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  bottom: 75%;
+
   @media screen and (max-width: 767px) {
     left: 17px;
+    top: -115px;
+  }
+  @media screen and(min-width: 768px) {
+    top: -100px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -200px;
   }
 }
 .products__item:first-child::before {
@@ -234,23 +237,24 @@
   color: $button-text;
   display: flex;
   flex-direction: column;
-  z-index: 2;
   @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: 1.15;
+    padding-top: 161px;
   }
   @media screen and(min-width: 768px) {
     font-size: 20px;
     line-height: 1.15;
+    padding-top: 152px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
+    padding-top: 163px;
   }
 }
 .products__product-name::after {
   position: absolute;
-  z-index: -1;
   font-family: $font-family-heading;
   content: '...';
   display: block;
@@ -276,12 +280,12 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $button-text;
-  @media screen and (max-width: 767px) {
-    font-size: 14px;
-    line-height: 1.52;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+
+  font-size: 14px;
+  line-height: 1.52;
+  padding-right: 40px;
+  padding-left: 40px;
+
   @media screen and(min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
@@ -305,7 +309,7 @@
   letter-spacing: 0.04em;
   color: $button-text;
   // @extend %centering;
-  padding-top: 20px;
+  // padding-top: 20px;
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: 1.52;
@@ -327,7 +331,7 @@
 }
 
 .products__wrap {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 66px;
   @extend %centering;
   @media screen and (min-width: 1200px) {
@@ -355,7 +359,9 @@
     margin-top: 62px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    cursor: pointer;
     background-color: #ecebeb;
   }
 }
@@ -365,7 +371,17 @@
   margin-left: auto;
 }
 
-#read-more:checked ~ .products__text-two {
+#ice-cream:checked ~ .products__text-two {
+  margin-top: -20px;
+  display: block;
+  margin: 0;
+}
+#ice-coffee:checked ~ .products__text-two {
+  margin-top: -20px;
+  display: block;
+  margin: 0;
+}
+#milkshakes:checked ~ .products__text-two {
   margin-top: -20px;
   display: block;
   margin: 0;
