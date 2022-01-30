@@ -194,23 +194,11 @@
 }
 
 .bio-eco-milk__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: $button-text;
-  border: none;
-  border-radius: 50%;
-
   @media screen and (max-width: 1199px) {
-    width: 18px;
-    height: 18px;
     margin-top: 7px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 26px;
-    height: 26px;
     margin-top: 20px;
   }
 }

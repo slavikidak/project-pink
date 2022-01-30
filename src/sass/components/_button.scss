@@ -93,3 +93,23 @@
 .button__icon {
   margin-left: 14px;
 }
+
+.button__circle--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $button-text;
+  border: none;
+  border-radius: 50%;
+
+  @media screen and (max-width: 1199px) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
+}
