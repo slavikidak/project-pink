@@ -36,7 +36,7 @@ img {
   list-style: none;
 }
 
-.container, .products__text-two, .products__wrap, .about__title,
+.container, .products__wrap, .about__title,
 .about__label, .about__img, .about__wrap, .about__text {
   margin-left: auto;
   margin-right: auto;
@@ -587,6 +587,10 @@ body {
   }
 }
 
+.products__list {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .products__list {
     display: -webkit-box;
@@ -922,7 +926,6 @@ body {
 }
 
 .products__text {
-  margin-top: 66px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.04em;
@@ -956,32 +959,55 @@ body {
   }
 }
 
-.products__text-two {
+.extra-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.76;
   text-align: center;
   letter-spacing: 0.04em;
   color: #FFFFFF;
-  color: #000000;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .extra-text {
+    font-size: 14px;
+    line-height: 1.52;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .products__text-two {
+  .extra-text {
     font-size: 14px;
     line-height: 1.76;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .extra-text {
+    font-size: 16px;
+    line-height: 1.76;
+    padding-right: 44px;
+    padding-left: 44px;
   }
 }
 
 .products__wrap {
   padding-bottom: 50px;
-  padding-top: 62px;
+  padding-top: 66px;
+}
+
+@media screen and (min-width: 1200px) {
+  .products__wrap {
+    padding-top: 70px;
+  }
 }
 
 .button--white {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,12 +1018,25 @@ body {
   width: 40px;
   height: 40px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .button--white {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .button--white {
-    font-size: 16px;
-    line-height: 1.31;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button--white {
+    margin-top: 62px;
   }
 }
 
@@ -1010,8 +1049,10 @@ body {
   margin-left: auto;
 }
 
-.products__text-two {
-  display: none;
+#read-more:checked ~ .extra-text {
+  margin-top: -20px;
+  display: block;
+  margin: 0;
 }
 
 .about {
