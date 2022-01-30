@@ -1,0 +1,274 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 93px 15px 94px 15px;
+
+  z-index: 1004;
+  opacity: 1;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity $transition;
+  overflow-y: scroll;
+}
+
+.backdrop__is-hidden,
+.backdrop-second__is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+
+  padding: 40px 40px;
+
+  background-color: $main-background-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border: 2px solid $accent-color;
+  border-radius: 24px;
+
+  transition: transform $transition;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 528px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 950px) and (orientation: landscape) and (max-height: 450px) {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.backdrop__is-hidden .modal,
+.backdrop-second__is-hidden .modal {
+  transform: translate(-50%, 50%) scale(0.3);
+}
+
+.modal-title__label {
+  font-family: $font-family-heading;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.modal__title {
+  margin-top: 10px;
+
+  font-family: $font-family-heading;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  transition: background-color $transition;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.close-button__icon {
+  fill: $accent-color;
+
+  transition: fill $transition;
+}
+
+.close-button:hover .close-button__icon,
+.close-button:focus .close-button__icon {
+  fill: $main-background-color;
+}
+
+.backdrop-form {
+  margin-top: 12px;
+}
+
+.backdrop-form__group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  margin-top: 25px;
+}
+
+.backdrop-form__group--first {
+  margin-top: 25px;
+}
+
+.backdrop-form__label {
+  position: absolute;
+  left: 20px;
+  bottom: 17px;
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+
+  color: $secondary-color;
+
+  transition: color $transition, transform $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.backdrop-form__input:not(:placeholder-shown) + .backdrop-form__label {
+  color: $accent-color;
+
+  @media screen and (max-width: 767px) {
+    transform: translate(-20px, -34px);
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translate(-20px, -37px);
+  }
+}
+
+.backdrop-form__input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 12px 20px 12px 20px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $secondary-color;
+
+  letter-spacing: 0.01em;
+
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+
+  transition: border $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.backdrop-form__input:hover,
+.backdrop-form__input:focus {
+  border: 1px solid $accent-color;
+  outline: 1px solid $accent-color;
+}
+
+.backdrop-form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  transition: fill $transition;
+}
+
+.backdrop-form__button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
