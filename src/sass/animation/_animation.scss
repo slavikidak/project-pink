@@ -1,0 +1,95 @@
+// some little animation
+
+// for white circles on the right
+@keyframes pulsing-first {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes get-shadow {
+  0% {
+    box-shadow: -2px -8px 50px 4px $button-hover-accent;
+  }
+  20% {
+    box-shadow: 10px -4px 50px 4px $button-hover-accent;
+  }
+  40% {
+    box-shadow: 8px 8px 50px 4px $button-hover-accent;
+  }
+  60% {
+    box-shadow: -6px 6px 50px 4px $button-hover-accent;
+  }
+  80% {
+    box-shadow: 4px 10px 50px 4px $button-hover-accent;
+  }
+  100% {
+    box-shadow: -2px -8px 50px 4px $button-hover-accent;
+  }
+}
+
+// for our hero mr.icecream
+@keyframes mr-icecream-shown {
+  0% {
+    transform: translateY(410px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mr-icecream-shown-desktop {
+  0% {
+    transform: translateY(557px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// for big pink circle
+@keyframes pink-cirkle-shown {
+  0% {
+    transform: translateY(596px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pink-cirkle-shown-scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  67% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// for cute girl
+@keyframes cute-girl-shown {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

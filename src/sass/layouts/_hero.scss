@@ -350,7 +350,7 @@
     right: -62px;
 
     animation: pink-cirkle-shown 1.3s cubic-bezier(0.4, 0, 0.2, 1),
-      pink-cirkle-shown-scale 1s cubic-bezier(0.4, 0, 0.2, 1) 1.45s;
+      pink-cirkle-shown-scale 1s cubic-bezier(0.4, 0, 0.2, 1) 1.3s;
   }
 
   @media screen and (min-width: 480px) {
@@ -358,7 +358,7 @@
     right: 20px;
 
     animation: pink-cirkle-shown 1.3s cubic-bezier(0.4, 0, 0.2, 1),
-      pink-cirkle-shown-scale 1s cubic-bezier(0.4, 0, 0.2, 1) 1.45s;
+      pink-cirkle-shown-scale 1s cubic-bezier(0.4, 0, 0.2, 1) 1.3s;
   }
 
   @media screen and (min-width: 768px) {
@@ -389,93 +389,12 @@
     bottom: -28px;
     right: 35px;
     z-index: 79;
+
+    animation: cute-girl-shown 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and (min-width: 1200px) {
     bottom: -45px;
     left: 852px;
-  }
-}
-
-// some little animation
-// for white circles on the right
-@keyframes pulsing-first {
-  0% {
-    transform: scale(0.9);
-  }
-  25% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  75% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-@keyframes get-shadow {
-  0% {
-    box-shadow: -2px -8px 50px 4px $button-hover-accent;
-  }
-  20% {
-    box-shadow: 10px -4px 50px 4px $button-hover-accent;
-  }
-  40% {
-    box-shadow: 8px 8px 50px 4px $button-hover-accent;
-  }
-  60% {
-    box-shadow: -6px 6px 50px 4px $button-hover-accent;
-  }
-  80% {
-    box-shadow: 4px 10px 50px 4px $button-hover-accent;
-  }
-  100% {
-    box-shadow: -2px -8px 50px 4px $button-hover-accent;
-  }
-}
-
-@keyframes mr-icecream-shown {
-  0% {
-    transform: translateY(410px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes mr-icecream-shown-desktop {
-  0% {
-    transform: translateY(557px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes pink-cirkle-shown {
-  0% {
-    transform: translateY(596px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes pink-cirkle-shown-scale {
-  0% {
-    transform: scale(1);
-  }
-  33% {
-    transform: scale(1.2);
-  }
-  67% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
   }
 }
