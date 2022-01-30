@@ -105,4 +105,11 @@
 
   width: 40px;
   height: 40px;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
