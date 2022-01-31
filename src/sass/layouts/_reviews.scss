@@ -53,10 +53,18 @@
 }
 .slider {
  background-color: #fafafa;
- padding: 40px 50px 26px;
+ padding: 40px 60px 26px;
  position: relative;
+ @media screen and(min-width:768px){
+  padding-left: 100px;  
+  padding-right: 100px;
+ }
+
+
 }
 .slider__comment {
+  margin: 0;
+  width: 100%;
   position: relative;
   font-weight: 500;
   font-size: 12px;
@@ -72,10 +80,9 @@
   z-index: 1;
   letter-spacing: 0.03em;
   @media screen and(min-width:768px) {
-    width: 620px;
-    margin: auto;
     font-size: 14px;
     line-height: 2.16;
+    letter-spacing: 0.04em;
     background-image: repeating-linear-gradient(
       to top,
       #e1e1e1,
@@ -92,26 +99,29 @@
       #fafafa 1px,
       #fafafa 30px 
     );
-    width: 926px;
     font-size: 16px;
     line-height: 1.87;
   }
 }
 
 .slider__comment::before {
-  position: absolute;
+    position: absolute;
   top: -12px;
-  left: -30px;
+  left: 0;
   content: '';
   display: block;
   width: 54px;
   height: 40px;
   background-image: url(../images/iconreview.svg);
   background-size: contain;
-  z-index: -1;
-  @media screen and(min-width:450px) {
-    left: -10px;
+  z-index: -1; 
+  @media screen and(min-width:330px) and (max-width:767px){
+    left: -20px;
   }
+  @media screen and(min-width:768px) {
+    left: 0;
+  }
+
 }
 .slider__comment::after{
   position: absolute;
