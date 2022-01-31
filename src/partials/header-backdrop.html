@@ -1,0 +1,57 @@
+<div class="backdrop backdrop__is-hidden" data-modal>
+  <div class="modal">
+    <p class="modal-title__label">hi! this heading should be in</p>
+    <h2 class="modal__title">the same style</h2>
+
+    <button type="button" class="close-button" data-modal-close>
+      <svg class="close-button__icon" width="17" height="17">
+        <use href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <form class="backdrop-form" autocomplete="off">
+      <div class="backdrop-form__group backdrop-form__group--first">
+        <input
+          name="user-name"
+          type="text"
+          class="backdrop-form__input"
+          id="user-name"
+          placeholder=" "
+          required
+        />
+        <label for="user-name" class="backdrop-form__label"> Name </label>
+      </div>
+
+      <div class="backdrop-form__group">
+        <input
+          name="phone-number"
+          type="tel"
+          class="backdrop-form__input"
+          id="phone-number"
+          placeholder=" "
+          required
+        />
+        <label for="phone-number" class="backdrop-form__label"> Phone number</label>
+      </div>
+
+      <div class="backdrop-form__group">
+        <input
+          name="e-mail"
+          type="email"
+          class="backdrop-form__input"
+          id="e-mail"
+          placeholder=" "
+          required
+        />
+        <label for="e-mail" class="backdrop-form__label"> E-mail </label>
+      </div>
+
+      <button type="submit" class="button button--bigger button--red backdrop-form__button">
+        Get my ice cream
+        <svg class="buy-button__icon" width="8" height="13">
+          <use href="./images/sprite.svg#icon-arrow-white"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
