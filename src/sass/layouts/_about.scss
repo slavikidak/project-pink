@@ -1,16 +1,14 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 39px;
 
   background-color: $main-background-color;
 
   @media screen and (min-width: 768px) {
     padding-top: 137px;
-    padding-bottom: 66px;
   }
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 33px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: 33px;
+  // }
 }
 .about__label {
   margin-bottom: 15px;

@@ -5,7 +5,7 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  @media screen and(min-width:1200px){
+  @media screen and(min-width:1280px){
     padding-top: 123px;
     padding-bottom: 132px;
   }
@@ -23,15 +23,9 @@
   height: 100%;
 }
 .swiper-wrapper {
-  @media screen and(max-width:479px){
-   padding-bottom: 20px;  
-  }
-     
-  @media screen and(min-width:480px){
-    padding-bottom: 35px;
+  padding-bottom: 35px;
   }
 
-}
 .swiper-slide {
   display: block;
   text-align: center;
@@ -47,7 +41,7 @@
   @media screen and(min-width:768px){
     margin-bottom: 20px;
    }
-  @media screen and(min-width:1200px){
+  @media screen and(min-width:1280px){
    margin-bottom: 15px;
   }
 }
@@ -91,7 +85,7 @@
       #fafafa 35px 
     );
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     background-image: repeating-linear-gradient(
       to top,
       #e1e1e1,
@@ -125,7 +119,6 @@
 }
 .slider__comment::after{
   position: absolute;
-  // bottom: 18px;
   bottom: 0;
   left: 50%;
   transform: translate(-70%) scale(1);
@@ -140,17 +133,16 @@
   font-size: 14px;
   line-height: 1.85;
   font-weight: 500;
-  margin-top: 70px;
+  margin-top: 62px;
   @media screen and(min-width:768px) {
     font-size: 16px;
     line-height: 1.87;
     margin-top: 52px;
   }
 
-  @media screen and(min-width:1200px){
+  @media screen and(min-width:1280px){
     font-size: 20px;
     line-height: 1.85;
-    margin-top: 60px;
   }
 }
 
