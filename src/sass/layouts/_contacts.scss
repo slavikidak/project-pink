@@ -8,7 +8,8 @@
     background-image: url(../images/contacts/desktop/bg@1x.png),
       linear-gradient($button-text 87px, $main-background-color 24px);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position-y: 23%;
   
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/contacts/desktop/bg@2x.png),
