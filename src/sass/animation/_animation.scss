@@ -1,5 +1,20 @@
 // some little animation
 
+// for jar with milk
+@keyframes jar-rotation {
+  0% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
 // for white circles on the right
 @keyframes pulsing-first {
   0% {
