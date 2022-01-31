@@ -1,21 +1,20 @@
 .footer {
   background-color: $main-background-color;
+  max-width: 100%;
   @media screen and (max-width: 767px) {
-    max-width: 100%;
     min-width: 320px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 100%;
     min-width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 100%;
-  }
 }
-address {
+.address {
   font-style: normal;
 }
 .footer__flex-container {
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 91px;
@@ -33,16 +32,16 @@ address {
     width: 232px;
     margin-bottom: 17px;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 16pt;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 1.15;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: 34px;
+    line-height: 1.13;
     margin-bottom: 15px;
   }
 }
@@ -55,15 +54,15 @@ address {
     width: 200px;
     margin-bottom: 43px;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.14;
   }
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 55px;
+    line-height: 1.14;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
-    line-height: 66px;
+    line-height: 1.14;
   }
 }
 .footer__title--container {
@@ -83,9 +82,6 @@ address {
   }
 }
 .footer__contact-container {
-  @media screen and (max-width: 767px) {
-    // margin-left: 110px;
-  }
   @media screen and (min-width: 768px) {
     margin-left: 75px;
   }
@@ -96,8 +92,7 @@ address {
 .social {
   display: flex;
   @media screen and (max-width: 767px) {
-    // margin-left: -28px;
-    justify-content: right;
+    justify-content: flex-end;
   }
   @media screen and (min-width: 768px) {
     margin-left: -30px;
@@ -154,14 +149,17 @@ address {
   color: $main-text-color;
   @media screen and (max-width: 767px) {
     font-size: 12px;
+    line-height: 1.84;
     margin-left: 35px;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    line-height: 1.87;
     margin-left: -33px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: 1.85;
     margin-left: -100px;
   }
 }
