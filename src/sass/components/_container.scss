@@ -11,8 +11,8 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
   }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .container__flex--wrap {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -32,7 +32,7 @@
 }
 
 .container__flex--baseline {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     align-items: baseline;
   }
 }

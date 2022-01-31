@@ -68,7 +68,7 @@
 
 .menu-button--opener,
 .menu-button--close {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -84,7 +84,7 @@
 }
 
 .menu-wrapper {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     position: fixed;
     top: 0;
     right: 0;
@@ -102,7 +102,7 @@
     transition: transform $transition;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     position: static;
   }
 }
@@ -113,7 +113,7 @@
 
 .buy-button {
   min-width: 209px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -133,7 +133,7 @@
 }
 
 .site-nav {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     margin-top: 19px;
 
     text-align: left;
@@ -148,7 +148,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
   }
 }
@@ -158,12 +158,12 @@
 }
 
 .site-nav__item:not(:first-child) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 35px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .site-nav__item:nth-child(2n + 1)::before {
     position: absolute;
     left: -20px;
@@ -231,12 +231,12 @@
     color: $accent-color;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     font-size: 14px;
     line-height: 1.29;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.31;
   }
