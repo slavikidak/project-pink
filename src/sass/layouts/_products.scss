@@ -375,9 +375,16 @@
   }
 }
 
-.products__icon {
+.products__icon,
+.products__icone {
   margin-right: auto;
   margin-left: auto;
+}
+.products__icone {
+  transform: rotateZ(270deg);
+}
+.button-less {
+  display: none;
 }
 
 #ice-cream:checked ~ .products__text-two {
@@ -385,13 +392,34 @@
   display: block;
   margin: 0;
 }
+#ice-cream:checked ~ .button__circle--white .button-more {
+  display: none;
+}
+
+#ice-cream:checked ~ .button__circle--white .button-less {
+  display: inline;
+}
 #ice-coffee:checked ~ .products__text-two {
   margin-top: -20px;
   display: block;
   margin: 0;
 }
+#ice-coffee:checked ~ .button__circle--white .button-more {
+  display: none;
+}
+
+#ice-coffee:checked ~ .button__circle--white .button-less {
+  display: inline;
+}
 #milkshakes:checked ~ .products__text-two {
   margin-top: -20px;
   display: block;
   margin: 0;
+}
+#milkshakes:checked ~ .button__circle--white .button-more {
+  display: none;
+}
+
+#milkshakes:checked ~ .button__circle--white .button-less {
+  display: inline;
 }
