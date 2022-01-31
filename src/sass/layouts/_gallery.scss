@@ -44,11 +44,11 @@
   }
 }
 
-// .gallery__items-image {
-//   @media screen and (max-width: 767px) {
-//     width: max-content;
-//   }
-// }
+.gallery__items-image {
+  @media screen and (max-width: 767px) {
+    min-width: 100%;
+  }
+}
 
 .item-1 {
   grid-column: 1/2;
