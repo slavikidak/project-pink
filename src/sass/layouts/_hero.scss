@@ -204,6 +204,13 @@
   border: none;
   border-radius: 50%;
 
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-grey;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-top: 7px;
     width: 18px;
