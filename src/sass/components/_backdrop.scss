@@ -23,10 +23,10 @@
 
 .modal {
   position: relative;
+  overflow: hidden;
 
   padding: 40px 40px;
 
-  background-color: $main-background-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border: 2px solid $accent-color;
   border-radius: 24px;
@@ -35,6 +35,8 @@
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     padding: 40px 20px;
+
+    background-image: linear-gradient(#ffffff 17%, #fff5f6 17%);
   }
 
   @media screen and (min-width: 480px) {
@@ -45,12 +47,16 @@
     width: 100%;
     max-width: 450px;
 
+    background-image: linear-gradient(#ffffff 16%, #fff5f6 16%);
+
     transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: 1200px) {
     width: 100%;
     max-width: 528px;
+
+    background-image: linear-gradient(#ffffff 18%, #fff5f6 18%);
   }
 
   @media screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
@@ -271,4 +277,40 @@
   margin-top: 30px;
   padding-left: 35px;
   padding-right: 35px;
+}
+
+.modal__circle--xs,
+.modal__circle--m,
+.modal__circle--l {
+  position: absolute;
+  background-color: $background-header;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.modal__circle--xs {
+  top: 20%;
+  left: 15%;
+  width: 50px;
+  height: 50px;
+
+  animation: pulsing-first 3.5s infinite;
+}
+
+.modal__circle--m {
+  top: 38%;
+  left: 80%;
+  width: 80px;
+  height: 80px;
+
+  animation: pulsing-first 4.5s infinite;
+}
+
+.modal__circle--l {
+  top: 87%;
+  left: 12%;
+  width: 110px;
+  height: 110px;
+
+  animation: pulsing-first 5.5s infinite;
 }
