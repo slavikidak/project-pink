@@ -20,7 +20,7 @@
     font-size: 26px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -42,7 +42,7 @@
     line-height: 1.15;
     max-width: 440px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 0;
 
     font-size: 58px;
@@ -78,7 +78,7 @@
     margin-top: 50px;
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 0;
     margin-left: 60px;
     margin-right: 0;
@@ -93,7 +93,7 @@
     margin-top: 100px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 440px;
   }
 }
@@ -114,7 +114,7 @@
     font-size: 14px;
     line-height: 1.76;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
     margin-bottom: 35px;
@@ -128,7 +128,7 @@
 
   color: $secondary-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.94;
     margin-bottom: 35px;
@@ -139,7 +139,7 @@
     margin-bottom: 62px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .about__text--third {
     margin-bottom: 45px;
   }
@@ -168,7 +168,7 @@
     line-height: 1.31;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     &:hover {
       background-color: #ecebeb;
     }
@@ -197,7 +197,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-size: 170px 450px, 250px 530px;
     background-position: top 360px left 0, top 350px right 0;
 
