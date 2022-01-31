@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: DM Sans, sans-serif;
+  font-family: $main-font;
   text-align: center;
   text-decoration: none;
 
@@ -31,7 +31,7 @@
 
   cursor: pointer;
 
-  transition: background-color 250ms linear;
+  transition: background-color $transition;
 }
 
 .button--bigger {
@@ -71,22 +71,22 @@
 }
 
 .button--red {
-  background-color: #d41342;
-  color: #ffffff;
+  background-color: $accent-color;
+  color: $button-text;
 
   &:hover,
   &:focus {
-    background-color: #c7133e;
+    background-color: $button-hover-accent;
   }
 }
 
 .button--white {
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: $button-text;
+  color: $accent-color;
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $button-hover-grey;
   }
 }
 
@@ -106,10 +106,10 @@
   width: 40px;
   height: 40px;
 
-  transition: background-color 250ms linear;
+  transition: background-color $transition;
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $button-hover-grey;
   }
 }
