@@ -262,8 +262,10 @@
   line-height: 1.5;
   text-decoration: none;
   color: $secondary-text-color;
-  &:hover,
-  :focus {
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
     color: $accent-color;
   }
 }
