@@ -1,7 +1,10 @@
 .section-contacts {
   width: 100%;
   background-image: linear-gradient($button-text 87px, $main-background-color 24px);
-
+  padding-bottom: 113px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 165px;
+  }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/contacts/desktop/bg@1x.png),
       linear-gradient($button-text 87px, $main-background-color 24px);
@@ -274,30 +277,20 @@
 
 // contacts-button
 .contacts-button {
+  margin-top: 54px;
+}
+.button-grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding-bottom: 113px;
-  margin-top: 54px;
-
   @media screen and (min-width: 768px) {
     flex-wrap: none;
     flex-direction: inherit;
-    padding-bottom: 165px;
   }
 }
-.button--perimeter {
-  // media-width-button
-  @media screen and (min-width: 768px) {
-    min-width: 190px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 200px;
-  }
-  // -----------------------
+.button-list {
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0px;
@@ -307,6 +300,15 @@
     margin-right: 15px;
     &:last-child {
       margin-right: 0px;
+    }
+  }
+  .button--perimeter {
+    // media-width-button
+    @media screen and (min-width: 768px) {
+      min-width: 190px;
+    }
+    @media screen and (min-width: 1280px) {
+      min-width: 200px;
     }
   }
 }
