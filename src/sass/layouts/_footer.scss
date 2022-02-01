@@ -81,14 +81,7 @@
     text-align: right;
   }
 }
-.footer__contact-container {
-  @media screen and (min-width: 768px) {
-    margin-left: 75px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 50px;
-  }
-}
+
 .social {
   display: flex;
   @media screen and (max-width: 767px) {
