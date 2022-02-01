@@ -13,7 +13,7 @@
 }
 
 .company {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -49,9 +49,24 @@
 
 .menu-button__icon--open,
 .menu-button__icon--close {
-  fill: $button-text;
-
   transition: fill $transition;
+}
+
+.menu-button__icon--open {
+  fill: $accent-color;
+}
+
+.menu-button:hover .menu-button__icon--open,
+.menu-button:focus .menu-button__icon--open {
+  fill: $button-text;
+}
+.menu-button__icon--close {
+  fill: $button-text;
+}
+
+.menu-button:hover .menu-button__icon--close,
+.menu-button:focus .menu-button__icon--close {
+  fill: $accent-color;
 }
 
 .menu-button--opener {
@@ -73,33 +88,33 @@
   }
 }
 
-.menu-button:hover .menu-button__icon--open,
-.menu-button:hover .menu-button__icon--close,
-.menu-button:focus .menu-button__icon--open,
-.menu-button:focus .menu-button__icon--close {
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
-
 .menu-wrapper {
+  transition: transform $transition;
+
+  @media screen and (max-width: 449px) {
+    width: 78vw;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    width: 57vw;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 33vw;
+  }
+
   @media screen and (max-width: 1279px) {
     position: fixed;
     top: 0;
     right: 0;
 
-    width: 78vw;
     height: 100vh;
     padding: 60px 20px;
 
     text-align: center;
-
     background-color: #e17992;
 
     transform: translateX(100%);
-
-    transition: transform $transition;
   }
 
   @media screen and (min-width: 1280px) {
@@ -125,6 +140,10 @@
 
   @media screen and (min-width: 768px) {
     margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 0;
   }
 }
 
@@ -216,7 +235,7 @@
 }
 
 .site-nav__link {
-  display: block;
+  display: inline-block;
   padding-top: 11px;
   padding-bottom: 13px;
   font-family: $main-font;
