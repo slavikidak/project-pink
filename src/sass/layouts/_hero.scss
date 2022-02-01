@@ -289,6 +289,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 1279px) {
     font-size: 28px;
@@ -302,6 +304,8 @@
 .establishments__name {
   font-family: $main-font;
   color: $button-text;
+  text-transform: none;
+  letter-spacing: 0;
 
   @media screen and (max-width: 1279px) {
     font-size: 8px;
