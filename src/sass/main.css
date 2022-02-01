@@ -1378,6 +1378,7 @@ body {
     max-width: 380px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    padding: 161px 40px 41px 40px;
   }
 }
 
@@ -1386,6 +1387,7 @@ body {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 220px;
+    padding: 152px 11px 40px 11px;
   }
 }
 
@@ -1394,6 +1396,7 @@ body {
     width: 329px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    padding: 163px 44px 50px 44px;
   }
 }
 
@@ -1635,7 +1638,6 @@ body {
   .products__product-name {
     font-size: 20px;
     line-height: 1.15;
-    padding-top: 161px;
   }
 }
 
@@ -1643,7 +1645,6 @@ body {
   .products__product-name {
     font-size: 20px;
     line-height: 1.15;
-    padding-top: 152px;
   }
 }
 
@@ -1651,7 +1652,6 @@ body {
   .products__product-name {
     font-size: 30px;
     line-height: 1.13;
-    padding-top: 163px;
   }
 }
 
@@ -1674,7 +1674,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .products__product-name::after {
-    top: 205px;
+    top: 192px;
     left: calc(50% - 26px / 2);
   }
 }
@@ -1693,16 +1693,12 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.52;
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .products__text {
     font-size: 14px;
     line-height: 1.76;
-    padding-right: 11px;
-    padding-left: 11px;
   }
 }
 
@@ -1710,8 +1706,6 @@ body {
   .products__text {
     font-size: 16px;
     line-height: 1.76;
-    padding-right: 44px;
-    padding-left: 44px;
   }
 }
 
@@ -1729,8 +1723,6 @@ body {
   .products__text-two {
     font-size: 14px;
     line-height: 1.52;
-    padding-right: 40px;
-    padding-left: 40px;
   }
 }
 
@@ -1738,8 +1730,6 @@ body {
   .products__text-two {
     font-size: 14px;
     line-height: 1.76;
-    padding-right: 11px;
-    padding-left: 11px;
   }
 }
 
@@ -1747,13 +1737,10 @@ body {
   .products__text-two {
     font-size: 16px;
     line-height: 1.76;
-    padding-right: 44px;
-    padding-left: 44px;
   }
 }
 
 .products__wrap {
-  padding-bottom: 40px;
   padding-top: 66px;
 }
 

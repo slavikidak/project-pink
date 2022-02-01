@@ -82,14 +82,17 @@
   @media screen and (max-width: 767px) {
     max-width: 380px;
     align-self: flex-start;
+    padding: 161px 40px 41px 40px;
   }
   @media screen and (min-width: 768px) {
     align-self: flex-start;
     width: 220px;
+    padding: 152px 11px 40px 11px;
   }
   @media screen and (min-width: 1280px) {
     width: 329px;
     align-self: flex-start;
+    padding: 163px 44px 50px 44px;
   }
 }
 
@@ -249,17 +252,14 @@
   @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: 1.15;
-    padding-top: 161px;
   }
   @media screen and(min-width: 768px) {
     font-size: 20px;
     line-height: 1.15;
-    padding-top: 152px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
-    padding-top: 163px;
   }
 }
 .products__product-name::after {
@@ -275,7 +275,7 @@
     left: calc(50% - 26px / 2);
   }
   @media screen and (min-width: 768px) {
-    top: 205px;
+    top: 192px;
     left: calc(50% - 26px / 2);
   }
   @media screen and (min-width: 1280px) {
@@ -292,20 +292,14 @@
 
   font-size: 14px;
   line-height: 1.52;
-  padding-right: 40px;
-  padding-left: 40px;
 
   @media screen and(min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
-    padding-right: 11px;
-    padding-left: 11px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
-    padding-right: 44px;
-    padding-left: 44px;
   }
 }
 
@@ -317,30 +311,22 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $button-text;
-  // @extend %centering;
-  // padding-top: 20px;
+
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: 1.52;
-    padding-right: 40px;
-    padding-left: 40px;
   }
   @media screen and(min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
-    padding-right: 11px;
-    padding-left: 11px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
-    padding-right: 44px;
-    padding-left: 44px;
   }
 }
 
 .products__wrap {
-  padding-bottom: 40px;
   padding-top: 66px;
   @extend %centering;
   @media screen and (min-width: 1280px) {
