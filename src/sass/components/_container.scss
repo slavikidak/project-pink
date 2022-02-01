@@ -1,18 +1,22 @@
 .container {
   @extend %centering;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-left: 114px;
+    padding-right: 114px;
   }
 }
 
