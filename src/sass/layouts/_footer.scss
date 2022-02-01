@@ -72,11 +72,9 @@
 }
 .footer__title--container {
   @media screen and (min-width: 768px) {
-    // margin-left: 20px;
     margin-right: 120px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 60px;
     margin-right: 400px;
   }
 }
@@ -161,7 +159,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.85;
-    // margin-left: -100px;
+    margin-left: -100px;
   }
 }
 .footer__adress--phone {
