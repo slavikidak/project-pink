@@ -127,6 +127,37 @@
   }
 }
 
+.modal-window__instructions {
+  margin-top: 10px;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+}
+
+.modal-window__instructions,
+.backdrop-form__coment-label {
+  font-family: $main-font;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-align: right;
+
+  color: $secondary-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -171,12 +202,12 @@
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-
+  padding-top: 5px;
   margin-top: 25px;
 }
 
 .backdrop-form__group--first {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .backdrop-form__label {
@@ -216,7 +247,8 @@
   }
 }
 
-.backdrop-form__input {
+.backdrop-form__input,
+.backdrop__comment {
   width: 100%;
   margin-top: 4px;
   padding: 12px 20px 12px 20px;
@@ -247,9 +279,49 @@
 }
 
 .backdrop-form__input:hover,
-.backdrop-form__input:focus {
+.backdrop-form__input:focus,
+.backdrop__comment:hover,
+.backdrop__comment:focus {
   border: 1px solid $accent-color;
   outline: 1px solid $accent-color;
+}
+
+.backdrop-form__coment-label {
+  margin-bottom: 5px;
+  @media screen and (max-width: 767px) {
+    width: 220;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 280;
+  }
+}
+
+.backdrop__comment {
+  resize: none;
+  height: 120px;
+}
+
+.backdrop__comment::placeholder {
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+
+  color: $secondary-color;
+
+  transition: color $transition, transform $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .backdrop-form__icon {
@@ -268,6 +340,43 @@
   margin-top: 30px;
   padding-left: 35px;
   padding-right: 35px;
+}
+
+.icecreem-icon {
+  position: absolute;
+  bottom: -100px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/icecream.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-23deg);
+
+  transition: transform $transition;
+
+  @media screen and (max-width: 449px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 480px) {
+    left: 15px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    left: 31px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 31px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 70px;
+  }
+}
+
+.backdrop-form__button:hover + .icecreem-icon {
+  transform: translateY(-90px);
 }
 
 .modal__circle--xs,
@@ -299,10 +408,30 @@
 }
 
 .modal__circle--l {
-  top: 87%;
-  left: 12%;
+  top: 85%;
+  left: 6%;
   width: 110px;
   height: 110px;
 
   animation: pulsing-first 5.5s infinite;
+
+  @media screen and (min-width: 450px) and (max-width: 480px) {
+    top: 85%;
+    left: 3%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 85%;
+    left: 6%;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 85%;
+    left: 6%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 87%;
+    left: 12%;
+  }
 }
