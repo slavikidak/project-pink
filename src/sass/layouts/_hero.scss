@@ -64,6 +64,7 @@
 
 .hero-section__title {
   position: relative;
+  z-index: 98;
 
   font-family: $font-family-heading;
   font-weight: normal;
@@ -72,7 +73,6 @@
   color: $button-text;
 
   @media screen and (max-width: 767px) {
-    z-index: 98;
     width: 218px;
 
     font-size: 26px;
@@ -352,7 +352,7 @@
 
 .pink-cirkle {
   position: absolute;
-  z-index: 95;
+  z-index: 90;
 
   width: 346px;
   height: 346px;
