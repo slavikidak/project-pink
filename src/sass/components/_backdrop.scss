@@ -273,6 +273,17 @@
     font-size: 14px;
   }
 }
+.modal__franchise-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $secondary-color;
+  line-height: 1.7;
+  overflow-y: scroll;
+}
+
+.modal__franchise-paragraph {
+  margin-top: 10px;
+}
 
 .backdrop-form__input:hover,
 .backdrop-form__input:focus,
