@@ -91,7 +91,7 @@
 .menu-wrapper {
   transition: transform $transition;
 
-  @media screen and (max-width: 449px) {
+  @media screen and (min-width: 320px) and (max-width: 449px) {
     width: 250px;
   }
 
@@ -99,19 +99,7 @@
     width: 57vw;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 859px) {
-    width: 35vw;
-  }
-
-  @media screen and (min-width: 860px) and (max-width: 1089px) {
-    width: 33vw;
-  }
-
-  @media screen and (min-width: 1090px) and (max-width: 1239px) {
-    width: 35vw;
-  }
-
-  @media screen and (min-width: 1240px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 36vw;
   }
 
