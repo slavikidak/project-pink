@@ -21,7 +21,7 @@
   overflow: hidden;
   z-index: 101;
 
-  padding: 40px 40px;
+  padding: 30px 40px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border: 2px solid $accent-color;
@@ -30,7 +30,7 @@
   transition: transform $transition;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
-    padding: 40px 20px;
+    padding: 30px 20px;
 
     background-image: linear-gradient(#ffffff 17%, #fff5f6 17%);
   }
@@ -49,7 +49,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 50%;
+    width: 100%;
     max-width: 528px;
 
     background-image: linear-gradient(#ffffff 18%, #fff5f6 18%);
@@ -57,7 +57,7 @@
 
   @media screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
     position: absolute;
-    top: 90%;
+    top: 110%;
     left: 50%;
 
     width: 100%;
@@ -68,7 +68,7 @@
 
   @media screen and (min-width: 480px) and (max-width: 950px) and (orientation: landscape) and (max-height: 450px) {
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     width: 100%;
@@ -102,7 +102,7 @@
 }
 
 .modal__title {
-  margin-top: 10px;
+  margin-top: 8px;
 
   font-family: $font-family-heading;
   font-weight: 400;
@@ -128,7 +128,7 @@
 }
 
 .modal-window__instructions {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
@@ -146,15 +146,15 @@
   color: $secondary-color;
 
   @media screen and (max-width: 767px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -195,7 +195,7 @@
 }
 
 .backdrop-form {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .backdrop-form__group {
@@ -203,11 +203,7 @@
   display: flex;
   flex-direction: column-reverse;
   padding-top: 5px;
-  margin-top: 25px;
-}
-
-.backdrop-form__group--first {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .backdrop-form__label {
@@ -223,15 +219,15 @@
   transition: color $transition, transform $transition;
 
   @media screen and (max-width: 767px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -266,15 +262,15 @@
   transition: border $transition;
 
   @media screen and (max-width: 767px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -297,10 +293,9 @@
   }
 }
 
-.backdrop__comment:hover,
-.backdrop__comment:focus .backdrop__comment {
+.backdrop__comment {
   resize: none;
-  height: 120px;
+  height: 80px;
 }
 
 .backdrop__comment::placeholder {
@@ -313,15 +308,15 @@
   transition: color $transition, transform $transition;
 
   @media screen and (max-width: 767px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -338,7 +333,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 35px;
   padding-right: 35px;
 }
