@@ -1,7 +1,10 @@
 <div id="myModal" class="backdrop modal" data-modal>
   <div class="modal-window">
-    <p class="modal-title__label">hi! this heading should be in</p>
-    <h3 class="modal__title">the same style</h3>
+    <p class="modal-title__label">hey! this is the order form of the most delicious</p>
+    <h3 class="modal__title">ice cream</h3>
+    <p class="modal-window__instructions">
+      Fill in below order form and our managers will immediately contact you to specify details.
+    </p>
 
     <button type="button" class="close-button close" data-modal-close>
       <svg class="close-button__icon" width="17" height="17">
@@ -46,12 +49,26 @@
         <label for="e-mail" class="backdrop-form__label"> E-mail </label>
       </div>
 
+      <div class="backdrop-form__group">
+        <textarea
+          name="comment"
+          class="backdrop__comment"
+          placeholder="Comment"
+          id="comment"
+        ></textarea>
+        <label for="comment" class="backdrop-form__coment-label"
+          >Нou can leave a comment for us below if you want
+        </label>
+      </div>
+
       <button type="submit" class="button button--bigger button--red backdrop-form__button">
         Get my ice cream
         <svg class="buy-button__icon" width="8" height="13">
           <use href="./images/sprite.svg#icon-arrow-white"></use>
         </svg>
       </button>
+
+      <div class="icecreem-icon"></div>
     </form>
     <div class="modal__circle--xs"></div>
     <div class="modal__circle--m"></div>
