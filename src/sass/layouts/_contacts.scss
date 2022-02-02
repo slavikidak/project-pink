@@ -47,15 +47,29 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  min-width: 220px;
-  max-width: 330px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+
+  @media screen and (max-width: 449px) {
+    padding: 43px 20px;
+    max-width: 220px;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    padding: 43px 40px;
+    font-size: 14px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 50px 32px;
+    font-size: 14px;
   }
+
   @media screen and (min-width: 1280px) {
     padding: 50px 43px;
-    width: 330px;
+    font-size: 16px;
   }
 }
 
@@ -66,7 +80,7 @@
 }
 
 .contacts-positioning {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 450px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,9 +95,7 @@
 .contacts-grid__title {
   display: inline-block;
 
-  font-weight: 500;
   line-height: 1.45;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $button-text;
 
@@ -93,7 +105,6 @@
     padding: 0 24px;
     margin-bottom: 25px;
 
-    font-size: 12px;
     border-radius: 4px;
   }
 
@@ -116,22 +127,7 @@
 
 // grid-town
 .contacts-grid__city {
-  font-weight: 500;
-  line-height: 1.86;
   color: $main-text-color;
-  letter-spacing: 0.04em;
-
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-  }
 }
 
 .contacts-grid__text {
@@ -140,18 +136,12 @@
   line-height: 1.5;
   color: $secondary-text-color;
 
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-  }
-
   @media screen and (min-width: 768px) {
     line-height: 1.66;
-    font-size: 14px;
   }
 
   @media screen and (min-width: 1280px) {
     line-height: 1.83;
-    font-size: 16px;
   }
 }
 
@@ -180,7 +170,6 @@
 // grid-data
 .contacts-grid__working-hour,
 .contacts-grid__contacts {
-  width: 100%;
   @media screen and (max-width: 767px) {
     margin-top: 50px;
   }
@@ -206,8 +195,12 @@
   background: $background-slider;
   width: 100%;
 
-  @media screen and (min-width: 479px) {
+  @media screen and (max-width: 449px) {
     bottom: -25px;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    display: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -222,25 +215,6 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 15px;
-  }
-}
-
-.contacts-grid__day,
-.contacts-grid__time,
-.contacts-grid__link {
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
   }
 }
 
