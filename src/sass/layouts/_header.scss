@@ -92,15 +92,27 @@
   transition: transform $transition;
 
   @media screen and (max-width: 449px) {
-    width: 78vw;
+    width: 250px;
   }
 
   @media screen and (min-width: 450px) and (max-width: 767px) {
     width: 57vw;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 859px) {
+    width: 254px;
+  }
+
+  @media screen and (min-width: 860px) and (max-width: 1089px) {
     width: 33vw;
+  }
+
+  @media screen and (min-width: 1090px) and (max-width: 1239px) {
+    width: 35vw;
+  }
+
+  @media screen and (min-width: 1240px) and (max-width: 1279px) {
+    width: 36vw;
   }
 
   @media screen and (max-width: 1279px) {
