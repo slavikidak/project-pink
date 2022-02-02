@@ -124,25 +124,26 @@
   transform: translate(-70%) scale(1);
   display: block;
   content: '...';
-  font-size: 50px;
+  font-size: 40px;
   width: 32px;
   height: 4px;
   color: $button-hover-accent;
 }
-.slider__adress {
+.slider__address {
   font-size: 14px;
   line-height: 1.85;
   font-weight: 500;
-  margin-top: 62px;
+  margin-top: 52px;
   @media screen and(min-width:768px) {
     font-size: 16px;
     line-height: 1.87;
-    margin-top: 52px;
+    margin-top: 42px;
   }
 
   @media screen and(min-width:1280px){
     font-size: 20px;
     line-height: 1.85;
+    margin-top: 34px;
   }
 }
 
