@@ -196,7 +196,7 @@
 .bio-eco-milk_full-text{
   display: none;
 }
-#full-text:checked ~ .bio-eco-milk_description.bio-eco-milk_full-text{
+#full-text:checked ~ .bio-eco-milk_full-text{
   display: block;
 }
 #full-text:checked ~ .bio-eco-milk_description{
