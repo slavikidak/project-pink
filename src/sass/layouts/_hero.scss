@@ -38,10 +38,6 @@
     position: relative;
     overflow: visible;
   }
-
-  @media screen and (min-width: 768px) {
-    padding-right: 30px;
-  }
 }
 
 .hero-positioning {
@@ -169,6 +165,7 @@
 }
 
 .bio-eco-milk__positioning {
+  position: relative;
   @media screen and (max-width: 1279px) {
     max-width: 114px;
     padding-bottom: 6px;
@@ -195,6 +192,26 @@
     line-height: 1.4;
   }
 }
+// bio-eco-milk_full-text
+.bio-eco-milk_full-text{
+  display: none;
+}
+#full-text:checked ~ .bio-eco-milk_description.bio-eco-milk_full-text{
+  display: block;
+}
+#full-text:checked ~ .bio-eco-milk_description{
+  position: absolute;
+  z-index: 100;
+  top:-80px;
+  
+  width: 200px;
+  font-size: 10px;
+  @media screen and (min-width:1280px){
+font-size: 12px;
+top:-100px;
+  }
+}
+
 
 .bio-eco-milk__button {
   display: flex;
