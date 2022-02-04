@@ -119,15 +119,14 @@
 }
 .slider__comment::after{
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 50%;
   transform: translate(-70%) scale(1);
   display: block;
-  content: '...';
-  font-size: 40px;
+  content: '';
+  background-image: url(../images/points.svg);
   width: 32px;
   height: 4px;
-  color: $button-hover-accent;
 }
 .slider__address {
   font-size: 14px;

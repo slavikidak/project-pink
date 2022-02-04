@@ -167,3 +167,25 @@
     }
   }
 }
+.button__home{
+  position: fixed;
+  z-index: 100;
+  font-weight: 700;
+  @media screen and(max-width:767px){
+    left: 20px;
+    bottom: 30px;
+  }
+  @media screen and(min-width:768px) and(max-width:1279px){
+    bottom: 18px;
+    left:36px;
+  } 
+  @media screen and(min-width:1280px) {
+    bottom: 2px;
+    left:114px;
+  }
+}
+.button--smaller.button__home {
+  @media screen and(min-width:1280px){
+    min-height: 35px;
+  }
+}
