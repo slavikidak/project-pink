@@ -1,28 +1,16 @@
-var modal = document.getElementById('franchiseModal');
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('.js-franch-backdrop--open'),
+    closeModalBtn: document.querySelector('.js-franch-backdrop--close'),
+    modal: document.querySelector('.js-franch-backdrop'),
+  };
 
-var franchiseBtn = document.getElementsByClassName('franchiseBtn');
-var close = document.getElementsByClassName('franchiseclose')[0];
-/*
-А это в цикле прокруциваем те элементы которыми мы открываем модал окно
-и обработчик события который открывет окно
-*/
-for (var i = 0; i < franchiseBtn.length; i++) {
-  franchiseBtn[i].addEventListener('click', function() {
-    openModalWindow();
-  })
-}
-// это обработчик события, который в нутри этой функции выполнят ту функцию 
-//которая закрывает окно модальное
-close.addEventListener('click', function() {
-  closeModalWindow();
-})
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-//это функция, которая открывает окно
-function openModalWindow() {
-  modal.style.display = "block";
-}
+  function toggleModal() {
+    document.body.classList.toggle("modal-open")
+    refs.modal.classList.toggle('js-franch-backdrop__is-hidden');
+  }
+})();
 
-//это функция, которая закрывает окно
-function closeModalWindow() {
-  modal.style.display = "none";
-}
