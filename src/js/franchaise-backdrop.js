@@ -9,7 +9,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open")
+    document.body.classList.toggle("franch-modal-open")
     refs.modal.classList.toggle('js-franch-backdrop__is-hidden');
   }
 })();
