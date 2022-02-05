@@ -1,28 +1,17 @@
-var modal = document.getElementById('myModal');
+  (() => {
+const refs = {
+    openModalBtnFirst: document.querySelector('.js-header-backdrop--open-one'),
+    openModalBtnSecond: document.querySelector('.js-header-backdrop--open-two'),
+    closeModalBtn: document.querySelector('.js-header-backdrop--close'),
+    modal: document.querySelector('.js-header-backdrop'),
+  };
 
-var myBtn = document.getElementsByClassName('myBtn');
-var close = document.getElementsByClassName('close')[0];
-/*
-А это в цикле прокруциваем те элементы которыми мы открываем модал окно
-и обработчик события который открывет окно
-*/
-for (var i = 0; i < myBtn.length; i++) {
-  myBtn[i].addEventListener('click', function() {
-    openModalWindow();
-  })
-}
-// это обработчик события, который в нутри этой функции выполнят ту функцию 
-//которая закрывает окно модальное
-close.addEventListener('click', function() {
-  closeModalWindow();
-})
+  refs.openModalBtnFirst.addEventListener('click', toggleModal);
+  refs.openModalBtnSecond.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-//это функция, которая открывает окно
-function openModalWindow() {
-  modal.style.display = "block";
-}
-
-//это функция, которая закрывает окно
-function closeModalWindow() {
-  modal.style.display = "none";
-}
+  function toggleModal() {
+    document.body.classList.toggle("header-modal-open")
+    refs.modal.classList.toggle('js-header-backdrop__is-hidden');
+  }
+})();

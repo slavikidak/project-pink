@@ -1,0 +1,431 @@
+body.franch-modal-open,
+body.header-modal-open {
+  overflow: hidden;
+}
+
+.modal-window {
+  position: relative;
+  overflow: hidden;
+  z-index: 101;
+
+  padding: 30px 40px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border: 2px solid $accent-color;
+  border-radius: 24px;
+
+  transition: transform $transition;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    padding: 30px 20px;
+
+    background-image: linear-gradient(#ffffff 17%, #fff5f6 17%);
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    background-image: linear-gradient(#ffffff 16%, #fff5f6 16%);
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 528px;
+
+    background-image: linear-gradient(#ffffff 18%, #fff5f6 18%);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 950px) and (orientation: landscape) and (max-height: 450px) {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-title__label {
+  font-family: $font-family-heading;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.modal__title {
+  margin-top: 8px;
+
+  font-family: $font-family-heading;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.modal-window__instructions {
+  margin-top: 8px;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+}
+
+.modal-window__instructions,
+.backdrop-form__coment-label {
+  font-family: $main-font;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-align: right;
+
+  color: $secondary-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  transition: background-color $transition;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.close-button__icon {
+  fill: $accent-color;
+
+  transition: fill $transition;
+}
+
+.close-button:hover .close-button__icon,
+.close-button:focus .close-button__icon {
+  fill: $main-background-color;
+}
+
+.backdrop-form {
+  margin-top: 10px;
+}
+
+.backdrop-form__group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 5px;
+  margin-top: 20px;
+}
+
+.backdrop-form__label {
+  position: absolute;
+  left: 20px;
+  bottom: 17px;
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+
+  color: $secondary-color;
+
+  transition: color $transition, transform $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+
+.backdrop-form__input:not(:placeholder-shown) + .backdrop-form__label {
+  color: $accent-color;
+
+  @media screen and (max-width: 767px) {
+    transform: translate(-20px, -34px);
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translate(-20px, -37px);
+  }
+}
+
+.backdrop-form__input,
+.backdrop__comment {
+  width: 100%;
+  margin-top: 4px;
+  padding: 12px 20px 12px 20px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $secondary-color;
+
+  letter-spacing: 0.01em;
+
+  border: 1px solid $accent-color;
+  border-radius: 8px;
+
+  transition: border $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+.modal__franchise-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $secondary-color;
+  line-height: 1.7;
+  overflow-y: scroll;
+}
+
+.modal__franchise-paragraph {
+  margin-top: 10px;
+}
+
+.backdrop-form__input:hover,
+.backdrop-form__input:focus,
+.backdrop__comment:hover,
+.backdrop__comment:focus {
+  border: 1px solid $accent-color;
+  outline: 1px solid $accent-color;
+}
+
+.backdrop-form__coment-label {
+  margin-bottom: 5px;
+  @media screen and (max-width: 767px) {
+    width: 220;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 280;
+  }
+}
+
+.backdrop__comment {
+  resize: none;
+  height: 80px;
+}
+
+.backdrop__comment::placeholder {
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+
+  color: $secondary-color;
+
+  transition: color $transition, transform $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+
+.backdrop-form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  transition: fill $transition;
+}
+
+.backdrop-form__button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.icecreem-icon {
+  position: absolute;
+  bottom: -100px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/icecream.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-23deg);
+
+  transition: transform $transition;
+
+  @media screen and (max-width: 449px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 480px) {
+    left: 15px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    left: 31px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 31px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 70px;
+  }
+}
+
+.backdrop-form__button:hover + .icecreem-icon {
+  transform: translateY(-90px);
+}
+
+.modal__circle--xs,
+.modal__circle--m,
+.modal__circle--l {
+  position: absolute;
+  background-color: $background-header;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.modal__circle--xs {
+  top: 20%;
+  left: 15%;
+  width: 50px;
+  height: 50px;
+
+  animation: pulsing-first 3.5s infinite;
+}
+
+.modal__circle--m {
+  top: 38%;
+  left: 80%;
+  width: 80px;
+  height: 80px;
+
+  animation: pulsing-first 4.5s infinite;
+}
+
+.modal__circle--l {
+  top: 85%;
+  left: 6%;
+  width: 110px;
+  height: 110px;
+
+  animation: pulsing-first 5.5s infinite;
+
+  @media screen and (min-width: 450px) and (max-width: 480px) {
+    top: 85%;
+    left: 3%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 85%;
+    left: 6%;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 85%;
+    left: 6%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 87%;
+    left: 12%;
+  }
+}
