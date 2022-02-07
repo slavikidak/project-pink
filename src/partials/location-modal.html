@@ -5,7 +5,10 @@
         <use href="./images/sprite.svg#icon-menu-close"></use>
       </svg>
     </button>
-
+    <div class="location-modal__title-positioning">
+      <p class="modal-title__label">our</p>
+      <h3 class="modal__title location-modal__title">locations</h3>
+    </div>
     <div class="location-modal__positioning">
       <input
         class="city-button visually-hidden chicago-city"
@@ -14,21 +17,29 @@
         id="chicago-city"
         checked
       />
-      <label for="chicago-city" class="city-label loc-filter">Chicago</label>
+      <label for="chicago-city" class="button button--bigger button--white filter-button"
+        >Chicago</label
+      >
       <input
         class="city-button visually-hidden los-angeles-city"
         type="radio"
         name="loc-city"
         id="los-angeles-city"
       />
-      <label for="los-angeles-city" class="city-label loc-filter">Los Angeles</label>
+      <label for="los-angeles-city" class="button button--bigger button--white filter-button"
+        >Los Angeles</label
+      >
       <input
         class="city-button visually-hidden new-york-city"
         type="radio"
         name="loc-city"
         id="new-york-city"
       />
-      <label for="new-york-city" class="city-label loc-filter">New York</label>
+      <label
+        for="new-york-city"
+        class="button button--bigger button--white filter-button filter-button--margin-bottom"
+        >New York</label
+      >
 
       <article class="location__card los-angeles">
         <div class="location__card--positioning">
