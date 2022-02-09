@@ -170,23 +170,21 @@
 .button-home{
   position: fixed;
   z-index: 100;
-  width: 40px;
-  height: 40px;
-  border:1px solid $accent-color;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color:$accent-color;
+  border-radius: 20%;
   transform: rotateZ(270deg);
   @media screen and(max-width:767px){
     right: 20px;
-    bottom: 25px;
+    bottom: 30px;
   }
   @media screen and(min-width:768px) and(max-width:1279px){
     right:36px;
-    bottom: 10px;
+    bottom: 15px;
   } 
   @media screen and(min-width:1280px) {
-    right: 200px;
-    bottom: 2px;
-    width: 35px;
-  height: 35px;
+    right: 114px;
+    bottom: 5px;
   }
 }
